@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <GraphCanvas/>
-</template>
+</template> 
 
 <script>
 import GraphCanvas from './components/GraphCanvas.vue'

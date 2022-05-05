@@ -1,11 +1,16 @@
 <template>
         <div id="viz"></div>
+        <AddNpc :viz="Viz"/>
 </template>
 
 <script>
 import NeoVis from 'neovis.js';
+import AddNpc from './AddNpc.vue';
 export default {
   name: 'GraphCanvas',
+    components: {
+        AddNpc
+    },
   props: {
   }, 
   data() {
