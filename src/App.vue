@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <GraphCanvas/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GraphCanvas from './components/GraphCanvas.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GraphCanvas
   }
 }
 </script>
