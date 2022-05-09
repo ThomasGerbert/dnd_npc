@@ -1,15 +1,19 @@
 <template>
         <div id="viz"></div>
         <AddNpc :viz="Viz"/>
+        <DeleteNpc :viz="Viz"/>
 </template>
 
 <script>
-import NeoVis from 'neovis.js';
+//import NeoVis from 'neovis.js'
+import NeoVis from '../neovis/neovis';
 import AddNpc from './AddNpc.vue';
+import DeleteNpc from './DeleteNpc.vue';
 export default {
   name: 'GraphCanvas',
     components: {
-        AddNpc
+        AddNpc,
+        DeleteNpc
     },
   props: {
   }, 
@@ -33,7 +37,7 @@ export default {
                     "caption": true
                 }
             },
-            initial_cypher: "MATCH (n)-[p]-(m) optional match (o) RETURN *"
+            initial_cypher: "MATCH (n)-[p]-(m) optional match (o) RETURN *" //TODO Error without any relation
         };
 
         this.Viz = new NeoVis(config);
